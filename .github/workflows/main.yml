@@ -30,7 +30,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           ./autogen.sh
-          ./configure
+          ./configure --prefix=/tmp
       - name: Build(autotools)
         run: |
           cd $GITHUB_WORKSPACE
