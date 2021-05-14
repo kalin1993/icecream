@@ -4,6 +4,10 @@
 #include "clients.hpp"
 #include <csignal>
 
+#ifndef __attribute_warn_unused_result__
+#define __attribute_warn_unused_result__
+#endif
+
 struct NativeEnvironment {
     std::string name; // the hash
     // Timestamps for files including compiler binaries, if they have changed since the time
